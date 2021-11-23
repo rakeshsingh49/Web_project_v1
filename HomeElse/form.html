@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- viewport for bootstrap -->
+  <!-- stylesheets -->
+    <link rel="stylesheet" href="css_jz/Templates_page.css" />
+    <link href="bootstrap_jz/css/bootstrap.css" rel="stylesheet">
+  <link href="home-css/base.css" rel="stylesheet">
+<!--   <script src="java_jz/java.js"></script> -->
+  <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <script src="bootstrap_jz/js/bootstrap.min.js"></script>
+  <link href="home-css/base.css" rel="stylesheet">
+   <title >Template sample page</title>
+ </head>
+
+<body >
+<!-- shared header ; changed templates dropdown(dropdown unavailable on other pages)-->
+  <header>
+    <img id="logo" src="home-img/header.png" alt="header">
+    <nav class="navbar navbar-inverse">
+      
+      <button type="button" class="navbar-toggle " data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <div class="navbar1 collapse navbar-collapse " >
+        <a href="../Home/home-page.html">Home</a>
+        <div class="dropdown1">
+          <button class="dropbtn1"><a href="Templates_page.html" style="padding:0pt">Templates</a>
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content1 ">
+            <a onclick="openLB();showT(1)">Restaurant</a>
+            <a onclick="openLB();showT(2)">Merchandise</a>
+            <a onclick="openLB();showT(3)">Campaign page</a>
+            <a onclick="openLB();showT(4)">Personal Portfolio</a>
+            <a onclick="openLB();showT(5)">Event</a>
+            <a onclick="openLB();showT(6)">Hotel</a>
+          </div>
+        </div>
+        <div class="navbar1">
+          <div class="dropdown1">
+            <button class="dropbtn1"><a href="actual.html" style="padding:0pt">Designers</a>
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content1">
+              <a href="#">Designers by Specialties</a>
+              <a href="#">By Availability</a>
+              <a href="#">By Price</a>
+              <a href="#">By Reviews</a>
+            </div>
+          </div>
+          
+          <a href="form.html" target="_blank">Contact</a>          
+        </div>
+      </div>
+      
+    </nav>  </header>
+<!-- Our info -->
+    <div class="container-fluid">
+        <h2 class="page-header ">Please feel free to drop us a line</h2>
+        <h3>Web Design Services</h3>
+        <h4>Address: 2201 G St NW, Washington, DC 20052</h4>
+        <h4>Phone: <a href="tel:8001231234">800 123-1234</a> </h4>
+        <h4>Email: <a href="mailto: 123@gwu.edu">123@gwu.edu</a></h4>
+    </div>
+<!-- Customer info -->
+    <div class="container-fluid">
+        <h3>Or, leave us a message!</h3>
+        <form action="#" method="post" >
+            <fieldset style="max-width: 800px;">
+                <legend>We'll get back to you in 3 business days</legend>
+                <table class="table">
+                    <tbody>
+                    <tr>
+                        <td > <label for="name">Name</label></td>
+                        <td > <input type="text" id="name" name="name" /></td>
+                    </tr>
+                    <tr>
+                        <td ><label for="Phone">Phone</label></td>
+                        <td ><input type="tel" id="Phone" name="Phone" placeholder="(nnn)nnn-nnnn" required pattern="\([0-9]{3}\)[0-9]{3}-[0-9]{4}"/></td>
+                    </tr>
+                    <tr>
+                        <td ><label for="Email Address">Email Address</label></td>
+                        <td ><input type="text" id="Email Address" name="Email Address" /></td>
+                    </tr>
+                    <tr>
+                        <td ><label for="Mailling Address">Mailing Address</label></td>
+                        <td ><textarea name="address" id="Mailling Address"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td ><label for="Message">Leave a message for us</label></td>
+                        <td ><textarea name="Message" id="Message"></textarea></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <input type="submit" id="btn-block" value="Submit">
+            </fieldset>
+            
+        </form>
+    </div>
+
+
+</body>
+
+  <footer >
+    <address>NetDesign Services Inc. &#8226; Washington D.C. &nbsp; 20052 &#8226;  202-6666-2333</address>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-google"></a>
+    <a href="#" class="fa fa-linkedin"></a>
+    <a href="#" class="fa fa-youtube"></a>
+    <a href="#" class="fa fa-instagram"></a>
+  </footer>
+
+</html>
+
