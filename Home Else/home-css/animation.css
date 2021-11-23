@@ -1,0 +1,49 @@
+.animated::before {  
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+.animated:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.animated::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0 0 0 0;
+  background: hsl(200 100% 80%);
+  z-index: -1;
+  transition: transform .3s ease;
+}
+
+.animated {
+  position: relative;
+  width: 15%;
+}
+
+#flyin {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: -30%;
+  }
+  
+  to {
+    margin-left: 0%
+  }
+}
+h2{
+  position: static;
+}
+img{
+  position: static;
+}
+article{
+  position: static;
+}

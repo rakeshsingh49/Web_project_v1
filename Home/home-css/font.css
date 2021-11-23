@@ -1,0 +1,24 @@
+/*fonts*/
+body{
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 16px;
+}
+h1{
+  font-size: 28px;
+}
+nav{
+  font-size: 0,8em;
+}
+
+h1,h2{
+  font-family: Quicksand, Verdana, Geneva, sans-serif;
+}
+
+nav{
+  font-size: 0.8em;
+}
+
+nav>ul{line-height: 2em;}
+
+
+
